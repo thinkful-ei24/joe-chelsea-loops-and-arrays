@@ -24,6 +24,21 @@ const min = (numbers) => {
 
 testArr = [];
 
-console.log(min(testArr));
+min(testArr);
+max(testArr);
 
 //-----------------------------------------------------------
+
+//Compute the average
+
+const average = (numbers) => {
+    let currentNum = 0;
+
+    let result = numbers.forEach(num => currentNum += num);
+
+    return currentNum / numbers.length;
+}
+
+testArr2 = [1, 4,3,7,10];
+
+average(testArr2);
